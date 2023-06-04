@@ -1,13 +1,11 @@
 from telethon import TelegramClient 
-from telethon.sessions import StringSession
-import os
 
-string = os.environ['STRING_SESSION']
-api_id = os.environ['API_KEY']
-api_hash = os.environ['API_HASH']
-news_api = os.environ['NEWS_API']
+
+api_id = 10738943
+api_hash = 'da61e3a08b5ac78ce28b4a4cd854aeec'
+news_api = '6ee5a3c2aa074546bc12b1e05a1da1e2'
 
 # with TelegramClient(StringSession(), api_id, api_hash) as client:
 #     session_str
 
-client = TelegramClient(StringSession(string), api_id , api_hash)
+client = TelegramClient('session', api_id , api_hash)
