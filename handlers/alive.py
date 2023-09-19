@@ -1,4 +1,4 @@
-
+import os
 from telethon import client, events
 
 
@@ -10,13 +10,14 @@ async def alivehandler(event):
     username =  me.username
     phtou = await client.download_profile_photo(username)
     await client.edit_message(event.message  ,
-        "Haan Jinda Hu bicy"
+        "CONFIGURATION......"
     )
     await event.respond(
-        "My Master @{}\nWant to make Your Own Bot??"
-        "\nBetter Watch Movies {}"
+        "My Master @{}\nWant to make Your Own Bot??\n\n"
+        "Bot Created by [bitrebell](t.me/bitrebell)"
+        "\nBetter Watch My Bot or Jealous {}"
         
-        .format(username , '@movie_united')
+        .format(username , '@bitrebell_bot')
         ,file = phtou
         )
     await event.message.delete()
