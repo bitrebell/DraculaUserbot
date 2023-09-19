@@ -1,7 +1,7 @@
 
 import logging
 from telethon import TelegramClient
-import handlers.news , handlers.alive , handlers.stoi , handlers.itos , handlers.iam , handlers.quot , handlers.reverse , handlers.save , handlers.photochor , handlers.greetings , handlers.ping , handlers.pmpermit , handlers.approvepm , handlers.meme , handlers.help , handlers.client
+import handler.admin, handlers.news , handlers.alive , handlers.stoi , handlers.itos , handlers.iam , handlers.quot , handlers.reverse , handlers.save , handlers.photochor , handlers.greetings , handlers.ping , handlers.pmpermit , handlers.approvepm , handlers.meme , handlers.help , handlers.client
 
 
 
@@ -10,6 +10,12 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
                     level=logging.WARNING)
 
 client = handlers.client.client
+
+# <---------------------- admin ------------------->
+with client as dracula:
+    dracula.add_event_handler(handlers.admin.helpHandler)
+
+
 
 # <---------------------- help ------------------->
 with client as dracula:
