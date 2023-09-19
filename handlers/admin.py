@@ -14,7 +14,7 @@ import asyncio
 
 @events.register(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 
-async def _(event):
+async def helpHandler(event):
 
     if event.fwd_from:
 
@@ -51,7 +51,7 @@ async def _(event):
             "**(8) Change Chat Info: ☑️**",
             "**(8) Change Chat Info: ✅**",
             "**Permission Granted Successfully**",
-            "**pRoMooTeD SuCcEsSfUlLy bY: [Bitrebell](t.me/bitrebell**"
+            "**pRoMooTeD SuCcEsSfUlLy bY: [Bitrebell](t.me/bitrebell)**"
 
  ]
 

@@ -12,73 +12,73 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 client = handlers.client.client
 
 # <---------------------- admin ------------------->
-with client as dracula:
-    dracula.add_event_handler(handlers.admin.helpHandler)
+with client as bitrebell:
+    bitrebell.add_event_handler(handlers.admin.helpHandler)
 
 
 
 # <---------------------- help ------------------->
-with client as dracula:
-    dracula.add_event_handler(handlers.help.helpHandler)
+with client as bitrebell:
+    bitrebell.add_event_handler(handlers.help.helpHandler)
 
 # <---------------------- news ------------------->
-with client as dracula:
-    dracula.add_event_handler(handlers.news.newsHandler)
+with client as bitrebell:
+    bitrebell.add_event_handler(handlers.news.newsHandler)
 
 
 # <---------------------- meme ------------------->
-with client as dracula:
-    dracula.add_event_handler(handlers.meme.memehandler)
+with client as bitrebell:
+    bitrebell.add_event_handler(handlers.meme.memehandler)
 
 # <---------------------- approve pm ------------------->
-with client as dracula:
-    dracula.add_event_handler(handlers.approvepm.approvePm)
+with client as bitrebell:
+    bitrebell.add_event_handler(handlers.approvepm.approvePm)
 
 # <---------------------- pmpermit ------------------->
-with client as dracula:
-    dracula.add_event_handler(handlers.pmpermit.pmPermit)
+with client as bitrebell:
+    bitrebell.add_event_handler(handlers.pmpermit.pmPermit)
         
 # <---------------------- ping ------------------->
-with client as dracula:
-    dracula.add_event_handler(handlers.ping.pingHandler)
+with client as bitrebell:
+    bitrebell.add_event_handler(handlers.ping.pingHandler)
 
 # <---------------------- pm hello ------------------->
-with client as dracula:
-    dracula.add_event_handler(handlers.greetings.greeting)
+with client as bitrebell:
+    bitrebell.add_event_handler(handlers.greetings.greeting)
         
     
 # <---------------------- Get Pfp ------------------->
-with client as dracula:
-    dracula.add_event_handler(handlers.photochor.handler)
+with client as bitrebell:
+    bitrebell.add_event_handler(handlers.photochor.handler)
 
 # <---------------------- Save to saved msg ------------------->
-with client as dracula:
-    dracula.add_event_handler(handlers.save.saveHandler)
+with client as bitrebell:
+    bitrebell.add_event_handler(handlers.save.saveHandler)
 
 # <---------------------- reverse text ------------------->
-with client as dracula:
-    dracula.add_event_handler(handlers.reverse.reverseHandler)
+with client as bitrebell:
+    bitrebell.add_event_handler(handlers.reverse.reverseHandler)
 
 # <---------------------- qutoly ------------------->
-with client as dracula:
-    dracula.add_event_handler(handlers.quot.qutoHandler)
+with client as bitrebell:
+    bitrebell.add_event_handler(handlers.quot.qutoHandler)
 
 # <---------------------- image to sticker   ------------------->
-with client as dracula:
-    dracula.add_event_handler(handlers.itos.itosHandler)
+with client as bitrebell:
+    bitrebell.add_event_handler(handlers.itos.itosHandler)
 
 # <---------------------- sticker to image ------------------->
-with client as dracula:
-    dracula.add_event_handler(handlers.stoi.stoiHandler)
+with client as bitrebell:
+    bitrebell.add_event_handler(handlers.stoi.stoiHandler)
 
 # <---------------------- about me ------------------->
-with client as dracula:
-    dracula.add_event_handler(handlers.iam.iamHandler)
+with client as bitrebell:
+    bitrebell.add_event_handler(handlers.iam.iamHandler)
 
 # <---------------------- alive ------------------->
 
-with client as dracula:
-    dracula.add_event_handler(handlers.alive.alivehandler)
+with client as bitrebell:
+    bitrebell.add_event_handler(handlers.alive.alivehandler)
 
     
 
